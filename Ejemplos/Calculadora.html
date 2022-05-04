@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>CALCULADORA</title>
+</head>
+
+<body>
+    <input type="number" id="valor1" maxlength="20" value="0"> <br>
+    <input type="number" id="valor2" maxlength="20" value="0"> <br>
+    <button onclick="suma()">Suma</button>
+    <p>Resultado: </p>
+    <p id="res"></p>
+
+</body>
+<script type="text/javascript">
+    function suma(){
+        let v1 = document.querySelector('#valor1');
+        let v2 = document.querySelector('#valor2');
+        //let suma = v1.value + v2.value;
+        let suma = parseInt(v1.value) + parseInt(v2.value);
+
+        let res = document.querySelector('#res');
+        res.innerText = suma;
+        //res.innerText = parseInt(v1.value) + parseInt(v2.value);
+    }
+
+</script>
+
+</html>
